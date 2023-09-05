@@ -6,8 +6,8 @@ import Input from './ui/Input';
 import Row from './ui/Row';
 
 const StyledApp = styled.main`
-  background-color: lightblue;
-  padding: 2rem;
+  margin: 0 auto;
+  width: 600px;
 `;
 
 function App() {
@@ -15,13 +15,18 @@ function App() {
     <>
       <GlobalStyles />
       <StyledApp>
-        <Row type='horizontal'>
+        <Row type='vertical'>
           <Heading as='h1'>Hotel Manager</Heading>
           <Heading as='h2'>Hotel Manager</Heading>
-        </Row>
-        <Row type='vertical'>
           <Heading as='h3'>Hotel Manager</Heading>
-          <Button>Button</Button>
+        </Row>
+        <Row type='horizontal'>
+          <Button variation='primary' size='large'>
+            Button
+          </Button>
+          <Button variation='secondary' size='small'>
+            Button
+          </Button>
           <Input />
         </Row>
       </StyledApp>
